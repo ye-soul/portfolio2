@@ -68,9 +68,7 @@ section { padding:7rem 3rem; }
 .case-item { display:grid;grid-template-columns:1fr 1fr;gap:3rem;border-bottom:1px solid var(--light);padding:4.5rem 0;opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease; }
 .case-item.visible { opacity:1;transform:translateY(0); }
 .case-item:last-child { border-bottom:none; }
-.case-item:nth-child(even) .case-content { order:2;padding:0 0 0 3rem; }
-.case-item:nth-child(even) .case-visual { order:1; }
-.case-content { padding:0 3rem 0 0;display:flex;flex-direction:column;justify-content:center; }
+.case-content { padding:0;display:flex;flex-direction:column;justify-content:center; }
 .case-tag { font-size:.7rem;letter-spacing:.15em;text-transform:uppercase;color:var(--mid);margin-bottom:.9rem; }
 .case-title { font-size:clamp(1.5rem,2.4vw,2.1rem);font-weight:800;line-height:1.2;letter-spacing:-.02em;margin-bottom:1.1rem; }
 .case-desc { font-size:.93rem;color:var(--mid);line-height:1.75;margin-bottom:2rem; }
@@ -244,17 +242,13 @@ footer { display:flex;align-items:center;justify-content:space-between;padding:1
     <div class="case-visual" style="flex-direction:column;gap:6px;padding:10px;background:#f9f8f6;">
       <div style="display:flex;gap:6px;">
         <img src="https://ye-soul.github.io/portfolio2/images/feed1.png" style="width:50%;aspect-ratio:1/1;object-fit:cover;object-position:top;border-radius:8px;" alt="Instagram feed 1">
-        <img src="https://ye-soul.github.io/portfolio2/images/feed2.pngg" style="width:50%;aspect-ratio:1/1;object-fit:cover;object-position:center top;border-radius:8px;" alt="Instagram feed 2">
+        <img src="https://ye-soul.github.io/portfolio2/images/feed2.png" style="width:50%;aspect-ratio:1/1;object-fit:cover;object-position:center top;border-radius:8px;" alt="Instagram feed 2">
       </div>
-      <img src="https://ye-soul.github.io/portfolio2/images/ces.png" style="width:100%;height:130px;object-fit:cover;object-position:center 35%;border-radius:8px;" alt="CES 2024 booth">
+      <img src="https://ye-soul.github.io/portfolio2/images/ces.png" style="width:100%;height:300px;object-fit:cover;object-position:center 35%;border-radius:8px;" alt="CES 2024 booth">
     </div>
   </div>
 
   <div class="case-item">
-    <div class="case-visual" style="flex-direction:row;gap:6px;padding:10px;background:#111;">
-      <img src="https://ye-soul.github.io/portfolio2/images/reels1.png" style="width:50%;height:100%;object-fit:cover;object-position:center top;border-radius:8px;" alt="Reels content 1">
-      <img src="https://ye-soul.github.io/portfolio2/images/reels2.PNG" style="width:50%;height:100%;object-fit:cover;object-position:center top;border-radius:8px;" alt="Reels content 2">
-    </div>
     <div class="case-content">
       <p class="case-tag">CERAGEM · Influencer Marketing & CES 2024</p>
       <h3 class="case-title" data-ko>예산의 한계를<br>전략으로 극복했습니다</h3>
@@ -265,6 +259,10 @@ footer { display:flex;align-items:center;justify-content:space-between;padding:1
         <div class="metric"><div class="metric-num">650K</div><div class="metric-label" data-ko>릴스 최고 조회수</div><div class="metric-label" data-en>Reels Peak Views</div></div>
         <div class="metric"><div class="metric-num">15+</div><div class="metric-label" data-ko>미국 매장 마케팅 자료</div><div class="metric-label" data-en>US Stores Supported</div></div>
       </div>
+    </div>
+    <div class="case-visual" style="flex-direction:row;gap:6px;padding:10px;background:#111;">
+      <img src="https://ye-soul.github.io/portfolio2/images/reels1.png" style="width:50%;height:100%;object-fit:cover;object-position:center top;border-radius:8px;" alt="Reels content 1">
+      <img src="https://ye-soul.github.io/portfolio2/images/reels2.PNG" style="width:50%;height:100%;object-fit:cover;object-position:center top;border-radius:8px;" alt="Reels content 2">
     </div>
   </div>
 
@@ -306,28 +304,6 @@ footer { display:flex;align-items:center;justify-content:space-between;padding:1
   </div>
 
   <div class="case-item">
-    <div class="case-visual" style="background:#000;flex-direction:row;gap:6px;padding:8px;align-items:stretch;">
-      <div style="flex:1.6;display:flex;flex-direction:column;gap:6px;">
-        <iframe
-          src="https://www.youtube.com/embed/S9FlMNJlKS4"
-          style="width:100%;flex:1;border:none;border-radius:8px;"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          title="Galaxy long-form content">
-        </iframe>
-        <div style="font-size:.68rem;color:#555;text-align:center;letter-spacing:.08em;text-transform:uppercase;">Long-form · 7.8K views</div>
-      </div>
-      <div style="flex:0.7;display:flex;flex-direction:column;gap:6px;">
-        <iframe
-          src="https://www.youtube.com/embed/2_NZB2ZIQlI"
-          style="width:100%;flex:1;border:none;border-radius:8px;"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-          title="Galaxy Shorts content">
-        </iframe>
-        <div style="font-size:.68rem;color:#555;text-align:center;letter-spacing:.08em;text-transform:uppercase;">Shorts · 23K views</div>
-      </div>
-    </div>
     <div class="case-content">
       <p class="case-tag">Samsung Galaxy Supporters 2기 · 2022</p>
       <h3 class="case-title" data-ko>숏폼이 뜰 때,<br>가장 빠르게 올렸습니다</h3>
@@ -337,6 +313,16 @@ footer { display:flex;align-items:center;justify-content:space-between;padding:1
       <div class="case-metrics">
         <div class="metric"><div class="metric-num">7.8K</div><div class="metric-label">YouTube Views</div></div>
         <div class="metric"><div class="metric-num">23K</div><div class="metric-label">Shorts Views</div></div>
+      </div>
+    </div>
+    <div class="case-visual" style="background:#000;flex-direction:row;gap:6px;padding:8px;align-items:stretch;">
+      <div style="flex:1.6;display:flex;flex-direction:column;gap:6px;">
+        <iframe src="https://www.youtube.com/embed/S9FlMNJlKS4" style="width:100%;flex:1;border:none;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Galaxy long-form content"></iframe>
+        <div style="font-size:.68rem;color:#555;text-align:center;letter-spacing:.08em;text-transform:uppercase;">Long-form · 7.8K views</div>
+      </div>
+      <div style="flex:0.7;display:flex;flex-direction:column;gap:6px;">
+        <iframe src="https://www.youtube.com/embed/2_NZB2ZIQlI" style="width:100%;flex:1;border:none;border-radius:8px;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen title="Galaxy Shorts content"></iframe>
+        <div style="font-size:.68rem;color:#555;text-align:center;letter-spacing:.08em;text-transform:uppercase;">Shorts · 23K views</div>
       </div>
     </div>
   </div>
