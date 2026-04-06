@@ -219,12 +219,21 @@ footer { display:flex;align-items:center;justify-content:space-between;padding:1
   <div class="case-item">
     <div class="case-visual">
       <div style="display:grid;grid-template-columns:1fr 1fr;width:100%;height:100%;gap:2px">
-  <div style="display:grid;grid-template-rows:1fr 1fr;gap:2px;height:100%">
-    <img src="https://ye-soul.github.io/portfolio2/images/reels1.png" style="width:100%;height:100%;object-fit:cover;object-position:top">
-    <img src="https://ye-soul.github.io/portfolio2/images/reels2.png" style="width:100%;height:100%;object-fit:cover;object-position:top">
-  </div>
-  <img src="https://ye-soul.github.io/portfolio2/images/ces.png" style="width:100%;height:100%;object-fit:cover;object-position:center top">
-</div>
+        <div style="display:grid;grid-template-rows:1fr 1fr;gap:2px;height:100%">
+          <img src="https://ye-soul.github.io/portfolio2/images/reels1.png" style="width:100%;height:100%;object-fit:cover;object-position:top">
+          <img src="https://ye-soul.github.io/portfolio2/images/reels2.png" style="width:100%;height:100%;object-fit:cover;object-position:top">
+        </div>
+        <img src="https://ye-soul.github.io/portfolio2/images/ces.png" style="width:100%;height:100%;object-fit:cover;object-position:center top">
+      </div>
+    </div>
+    <div class="case-content">
+      <p class="case-tag">CERAGEM · Influencer Marketing & CES 2024</p>
+      <h3 class="case-title" data-ko>예산의 한계를<br>전략으로 극복했습니다</h3>
+      <h3 class="case-title" data-en>Turned Budget Constraints<br>Into a Strategy</h3>
+      <p class="case-desc" data-ko>Macro 인플루언서 대신 Micro 인플루언서를 발굴·시딩해 자연스러운 바이럴을 만들었습니다. HSAD, Hawke Media와 협업하고 CES 2024 부스 운영까지 담당했습니다.</p>
+      <p class="case-desc" data-en>Instead of macro influencers, identified and seeded micro-influencers for organic virality. Collaborated with agencies HSAD and Hawke Media, and managed booth operations at CES 2024.</p>
+      <div class="case-metrics">
+        <div class="metric"><div class="metric-num">650K</div><div class="metric-label" data-ko>릴스 최고 조회수</div><div class="metric-label" data-en>Reels Peak Views</div></div>
         <div class="metric"><div class="metric-num">15+</div><div class="metric-label" data-ko>미국 매장 마케팅 자료</div><div class="metric-label" data-en>US Stores Supported</div></div>
       </div>
     </div>
@@ -493,4 +502,10 @@ document.getElementById('btnKo').addEventListener('click',function(){
 document.getElementById('btnEn').addEventListener('click',function(){
   document.body.className='lang-en';
   this.classList.add('active');
-  document.getElementById('btnKo').classList.remove('active')
+  document.getElementById('btnKo').classList.remove('active')});
+
+const io=new IntersectionObserver(entries=>entries.forEach(e=>{if(e.isIntersecting)e.target.classList.add('visible');}),{threshold:.1});
+document.querySelectorAll('.case-item').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
