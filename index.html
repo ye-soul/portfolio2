@@ -9,11 +9,11 @@
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 :root { --black:#0a0a0a; --dark:#1a1a1a; --mid:#6b6b6b; --light:#e8e8e8; --bg:#f9f8f6; --white:#ffffff; }
 html { scroll-behavior: smooth; }
-body { font-family:'Pretendard',-apple-system,sans-serif; background:var(--bg); color:var(--black); font-size:16px; line-height:1.6; cursor:none; }
+body { font-family:'Pretendard',-apple-system,sans-serif; background:var(--bg); color:var(--black); font-size:16px; line-height:1.6;  }
 
 /* CURSOR */
-.cursor { width:8px;height:8px;background:var(--black);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9999; }
-.cursor-ring { width:32px;height:32px;border:1px solid var(--black);border-radius:50%;position:fixed;top:0;left:0;pointer-events:none;z-index:9998;transition:width .3s,height .3s,opacity .3s;transform:translate(-12px,-12px); }
+.cursor { display:none; }
+.cursor-ring { display:none; }
 
 /* LANG */
 .lang-ko [data-en] { display:none!important; }
@@ -207,10 +207,10 @@ footer { display:flex;align-items:center;justify-content:space-between;padding:1
     </div>
     <div class="case-visual">
       <div style="display:grid;grid-template-columns:1fr 1fr;width:100%;height:100%;gap:2px">
-  <img src="images/insta_account.jpg" style="width:100%;height:100%;object-fit:cover;object-position:top">
+  <img src="https://ye-soul.github.io/portfolio2/images/insta_account.jpg" style="width:100%;height:100%;object-fit:cover;object-position:top">
   <div style="display:grid;grid-template-rows:1fr 1fr;gap:2px;height:100%">
-    <img src="images/feed1.png" style="width:100%;height:100%;object-fit:cover">
-    <img src="images/feed2.png" style="width:100%;height:100%;object-fit:cover">
+    <img src="https://ye-soul.github.io/portfolio2/images/feed1.png" style="width:100%;height:100%;object-fit:cover">
+    <img src="https://ye-soul.github.io/portfolio2/images/feed2.png" style="width:100%;height:100%;object-fit:cover">
   </div>
 </div>
     </div>
@@ -220,10 +220,10 @@ footer { display:flex;align-items:center;justify-content:space-between;padding:1
     <div class="case-visual">
       <div style="display:grid;grid-template-columns:1fr 1fr;width:100%;height:100%;gap:2px">
   <div style="display:grid;grid-template-rows:1fr 1fr;gap:2px;height:100%">
-    <img src="images/reels1.png" style="width:100%;height:100%;object-fit:cover;object-position:top">
-    <img src="images/reels2.png" style="width:100%;height:100%;object-fit:cover;object-position:top">
+    <img src="https://ye-soul.github.io/portfolio2/images/reels1.png" style="width:100%;height:100%;object-fit:cover;object-position:top">
+    <img src="https://ye-soul.github.io/portfolio2/images/reels2.png" style="width:100%;height:100%;object-fit:cover;object-position:top">
   </div>
-  <img src="images/ces.png" style="width:100%;height:100%;object-fit:cover;object-position:center top">
+  <img src="https://ye-soul.github.io/portfolio2/images/ces.png" style="width:100%;height:100%;object-fit:cover;object-position:center top">
 </div>
         <div class="metric"><div class="metric-num">15+</div><div class="metric-label" data-ko>미국 매장 마케팅 자료</div><div class="metric-label" data-en>US Stores Supported</div></div>
       </div>
