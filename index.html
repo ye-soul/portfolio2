@@ -268,6 +268,14 @@ body{word-break:keep-all;overflow-wrap:break-word;line-break:strict}
 h1,h2,h3,h4,.quote,.lead{text-wrap:balance}
 p,li,dd{text-wrap:pretty}
 .story h3{max-width:none}
+
+a.tile{transition:border-color .3s var(--ease),transform .3s var(--ease)}
+a.tile:hover{border-color:var(--accent);transform:translateY(-2px)}
+a.tile:active{transform:scale(.98)}
+a.tile .pl{transition:background .3s var(--ease),border-color .3s var(--ease)}
+a.tile:hover .pl{background:var(--accent);border-color:var(--accent)}
+a.tile:hover .pl::before{border-left-color:var(--paper)}
+a.tile:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 </style>
 </head>
 <body>
@@ -300,8 +308,8 @@ p,li,dd{text-wrap:pretty}
         <span class="en">Yeseul Yoon<br><span class="thin">윤예슬</span></span>
       </h1>
       <p class="lead rv" style="--i:2">
-        <span class="ko">지금은 <b>Microsoft Innovation Hub Seoul</b>에서 기업 고객 임원 브리핑을 운영하고 있어요. 그 전에는 LA에서 박람회 부스를 세우고, 브랜드 인스타그램을 키우고, 아시아 시장에 Meta 광고를 돌렸습니다. 한국어와 영어로 일합니다.</span>
-        <span class="en">I run executive briefings for enterprise customers at the <b>Microsoft Innovation Hub Seoul</b>. Before that I set up trade show booths in LA, grew a brand's Instagram, and ran Meta ads across Asia. I work in Korean and English.</span>
+        <span class="ko">브랜드의 고객을 모으는 일에서, <b>기업 고객을 맞이하는 일로.</b> 미국과 아시아의 마케팅 현장을 거쳐 지금은 Microsoft에 있습니다.</span>
+        <span class="en">From bringing customers to brands, <b>to welcoming enterprise customers.</b> After marketing work across the US and Asia, I'm now at Microsoft.</span>
       </p>
     </div>
     <aside class="side rv" style="--i:3">
@@ -349,8 +357,8 @@ p,li,dd{text-wrap:pretty}
         <h3 class="rv"><span class="ko">한 달에 20~30건,<br><em>임원 브리핑</em> 운영</span><span class="en">20 to 30 <em>executive briefings</em><br>a month</span></h3>
         <div class="body">
           <div class="rv">
-            <p><span class="ko">Innovation Hub를 찾는 기업 고객의 C-level 임원 브리핑을 준비하고 진행합니다. 세일즈 팀과 일정과 아젠다를 맞추고, 외부 벤더를 관리하고, 초청장이나 사이니지 같은 행사 자료도 만들어요. 지금까지 VIP 고객 약 300명을 맞았습니다.</span>
-            <span class="en">I plan and run C-level briefings for enterprise customers visiting the Innovation Hub. I line up schedules and agendas with sales, manage outside vendors, and make the invitations and signage. So far that's roughly 300 VIP guests.</span></p>
+            <p><span class="ko">Innovation Hub를 찾는 기업 고객의 C-level 임원 브리핑을 준비하고 진행합니다. 세일즈 팀과 일정과 아젠다를 맞추고, 외부 벤더를 관리하고, 초청장이나 사이니지 같은 행사 자료도 만들어요. 지금까지 VIP 고객 300명 이상을 맞았습니다.</span>
+            <span class="en">I plan and run C-level briefings for enterprise customers visiting the Innovation Hub. I line up schedules and agendas with sales, manage outside vendors, and make the invitations and signage. So far that's more than 300 VIP guests.</span></p>
             <p><span class="ko">고객 피드백을 보고 아젠다를 미리 공유하는 단계를 넣었습니다. 세션 기록은 Dynamics 365로 관리하고, 운영 지표는 Power BI로 모니터링하고 리포팅합니다. 세일즈, 기술 담당자, ASIA · EMEA · 본사 팀과 함께 일하고, 세션이 끝난 뒤 후속 처리까지 챙깁니다.</span>
             <span class="en">Based on customer feedback, I added a step to share the agenda ahead of time. I keep session records in Dynamics 365 and track and report operations metrics in Power BI. I work with sales, technical staff, and regional teams across ASIA, EMEA and worldwide, and handle the follow-up after each session.</span></p>
             <div class="tags"><span>Executive briefings</span><span>Dynamics 365</span><span>Power BI</span><span>Vendor management</span></div>
@@ -360,7 +368,7 @@ p,li,dd{text-wrap:pretty}
               <div><b>+67</b><small>NPS</small></div>
               <div><b>80%</b><small>CSAT</small></div>
               <div><b>100+</b><small><span class="ko">누적 세션</span><span class="en">Sessions</span></small></div>
-              <div><b>~300</b><small><span class="ko">VIP 고객</span><span class="en">VIP guests</span></small></div>
+              <div><b>300+</b><small><span class="ko">VIP 고객</span><span class="en">VIP guests</span></small></div>
             </div>
           </div>
         </div>
@@ -373,8 +381,8 @@ p,li,dd{text-wrap:pretty}
           <div class="rv">
             <p><span class="ko">세라젬 미국법인 계정은 거의 방치되어 있었고, 20~30대 팔로워는 없다시피 했습니다. 소비자 설문과 경쟁 브랜드 계정을 먼저 살펴본 뒤 콘텐츠 방향을 다시 잡았어요.</span>
             <span class="en">CERAGEM's US account had been left alone for a while, with almost no followers in their 20s and 30s. I started with a consumer survey and a look at competitor accounts, then reset the content plan.</span></p>
-            <p><span class="ko">큰 인플루언서를 쓸 예산은 없어서 마이크로 인플루언서를 직접 찾아 제품을 보냈습니다. HSAD, Hawke Media와 협업했고, 미국 15개 넘는 매장의 포스터와 판촉물을 디자인했어요. CES 2024 부스 운영도 함께했습니다.</span>
-            <span class="en">There was no budget for big creators, so I found micro-influencers myself and sent them product. I also worked with HSAD and Hawke Media, designed posters for 15+ US stores, and staffed the CES 2024 booth.</span></p>
+            <p><span class="ko">큰 인플루언서를 쓸 예산은 없어서 마이크로 인플루언서를 직접 찾아 플래그십 스토어로 초대했고, 매장에서 직접 체험한 내용이 그대로 콘텐츠가 됐어요. HSAD, Hawke Media와 협업했고, 미국 15개 넘는 매장의 포스터와 판촉물을 디자인했어요. CES 2024 부스 운영도 함께했습니다.</span>
+            <span class="en">There was no budget for big creators, so I found micro-influencers myself and invited them to our flagship store. What they experienced there became the content. I also worked with HSAD and Hawke Media, designed posters for 15+ US stores, and staffed the CES 2024 booth.</span></p>
             <div class="tags"><span>Instagram</span><span>Micro-influencers</span><span>Meta Ads</span><span>CES 2024</span></div>
           </div>
           <div class="rv" style="--i:1">
@@ -424,11 +432,11 @@ p,li,dd{text-wrap:pretty}
 
       <article class="story" id="c4">
         <div class="meta eyebrow rv"><span>KITA · GTEP <span class="ko">15기</span><span class="en">Cohort 15</span></span><span>Shopee Singapore</span><span>2021.03 – 2022.02</span></div>
-        <h3 class="rv"><span class="ko">싱가포르 Shopee 스토어<br><em>1년 운영</em></span><span class="en">A year running<br>a <em>Shopee Singapore</em> store</span></h3>
+        <h3 class="rv"><span class="ko">싱가포르 Shopee 스토어<br><em>3개월 운영</em></span><span class="en">Three months running<br>a <em>Shopee Singapore</em> store</span></h3>
         <div class="body">
           <div class="rv">
-            <p><span class="ko">한국무역협회 GTEP 15기로 한국 밀크티 브랜드의 Shopee Singapore 스토어를 맡았습니다. 사업자 등록부터 상품 등록, 재고, 배송, CS까지 직접 했어요. 오징어게임이 한창일 때 달고나 키트를 묶어 팔았더니 판매가 늘었습니다.</span>
-            <span class="en">As part of KITA's GTEP program I ran a Korean milk tea brand's Shopee Singapore store: business registration, listings, stock, shipping and customer service. When Squid Game was everywhere, I bundled dalgona kits with the tea and sales went up.</span></p>
+            <p><span class="ko">한국무역협회 GTEP 15기로 한국 밀크티 브랜드의 Shopee Singapore 스토어를 3개월간 맡았습니다. 사업자 등록부터 상품 등록, 재고, 배송, CS까지 직접 했어요. 오징어게임이 한창일 때 달고나 키트를 묶어 팔았더니 판매가 늘었습니다.</span>
+            <span class="en">As part of KITA's GTEP program I ran a Korean milk tea brand's Shopee Singapore store for three months: business registration, listings, stock, shipping and customer service. When Squid Game was everywhere, I bundled dalgona kits with the tea and sales went up.</span></p>
             <p><span class="ko">부산국제식품박람회와 EBS 멕시코 뷰티 엑스포에서 부스를 운영하고 바이어 미팅에 들어갔습니다. 전자상거래 경진대회에서 입상했어요.</span>
             <span class="en">I also worked booths and sat in on buyer meetings at the Busan International Food Expo and EBS Mexico Beauty Expo, and placed in the program's e-commerce competition.</span></p>
             <div class="tags"><span>Shopee</span><span>Cross-border</span><span>Trade shows</span></div>
@@ -446,19 +454,17 @@ p,li,dd{text-wrap:pretty}
 
       <article class="story" id="c5">
         <div class="meta eyebrow rv"><span>Samsung Electronics</span><span><span class="ko">갤럭시 대학생 서포터즈</span><span class="en">Galaxy Student Supporters</span></span><span>2022</span></div>
-        <h3 class="rv"><span class="ko">갤럭시 쇼츠<br><em>2만 3천 회</em></span><span class="en">A Galaxy Short<br>with <em>23K views</em></span></h3>
+        <h3 class="rv"><span class="ko">갤럭시 쇼츠<br><em>3만 회</em></span><span class="en">A Galaxy Short<br>with <em>30K views</em></span></h3>
         <div class="body">
           <div class="rv">
-            <p><span class="ko">1년 동안 대학생을 위한 갤럭시 콘텐츠를 만들었습니다. 갤럭시 워치5로 버스와 지하철을 타는 쇼츠가 23,000회, 버즈2 케이스를 소개한 영상이 7,700회 나왔어요. 직접 기획한 플로깅 CSR 행사는 전국 활동으로 채택됐습니다.</span>
-            <span class="en">For a year I made Galaxy content aimed at college students. A Short about paying for the bus and subway with a Galaxy Watch5 reached 23,000 views, and a Buds2 case video reached 7,700. A plogging event I planned was picked up nationwide.</span></p>
-            <a class="vlink" data-link="short" hidden target="_blank" rel="noopener"><span class="ko">쇼츠 보기</span><span class="en">Watch the Short</span> ↗</a>
-            <a class="vlink" data-link="long" hidden target="_blank" rel="noopener" style="margin-inline-start:14px"><span class="ko">영상 보기</span><span class="en">Watch the video</span> ↗</a>
+            <p><span class="ko">1년 동안 대학생을 위한 갤럭시 콘텐츠를 만들었습니다. 갤럭시 워치5로 버스와 지하철을 타는 쇼츠가 30,000회, 버즈2 케이스를 소개한 영상이 8,000회 나왔어요. 직접 기획한 플로깅 CSR 행사는 전국 활동으로 채택됐습니다.</span>
+            <span class="en">For a year I made Galaxy content aimed at college students. A Short about paying for the bus and subway with a Galaxy Watch5 reached 30,000 views, and a Buds2 case video reached 8,000. A plogging event I planned was picked up nationwide.</span></p>
           </div>
           <div class="rv" style="--i:1">
             <div class="viz"><div class="lab"><span>VIEWS</span><span>YOUTUBE</span></div>
               <div class="tiles">
-                <div class="tile tall"><span class="pl"></span><div><b>23K</b><small><span class="ko">Shorts · 갤럭시 워치5로 대중교통 타기</span><span class="en">Shorts · Transit with Galaxy Watch5</span></small></div></div>
-                <div class="tile"><span class="pl"></span><div><b>7.7K</b><small><span class="ko">Long-form · 버즈2 케이스 추천</span><span class="en">Long-form · Buds2 cases</span></small></div></div>
+                <a class="tile tall" href="https://youtube.com/shorts/2_NZB2ZIQlI" target="_blank" rel="noopener" aria-label="갤럭시 워치5 쇼츠 보기 / Watch the Galaxy Watch5 Short"><span class="pl"></span><div><b>30K</b><small><span class="ko">Shorts · 갤럭시 워치5로 대중교통 타기</span><span class="en">Shorts · Transit with Galaxy Watch5</span></small></div></a>
+                <a class="tile" href="https://youtu.be/S9FlMNJlKS4" target="_blank" rel="noopener" aria-label="갤럭시 버즈2 영상 보기 / Watch the Galaxy Buds2 video"><span class="pl"></span><div><b>8K</b><small><span class="ko">Long-form · 버즈2 케이스 추천</span><span class="en">Long-form · Buds2 cases</span></small></div></a>
               </div></div>
           </div>
         </div>
@@ -496,7 +502,7 @@ p,li,dd{text-wrap:pretty}
         <li><span>Google Ads <span class="ko">검색 인증</span><span class="en">Search Certification</span></span><span>2026</span></li>
         <li><span>Salesforce Certified Administrator</span><span>2025</span></li>
         <li><span>Google Data Analytics <span class="ko">과정 5개 수료</span><span class="en">(5 courses)</span></span><span>2024</span></li>
-        <li><span><span class="ko">국제무역사 (한국무역협회)</span><span class="en">International Trade Specialist, KITA</span></span><span>2022</span></li>
+        <li><span><span class="ko">국제무역사 1급 (한국무역협회)</span><span class="en">International Trade Specialist, Level 1 (KITA)</span></span><span>2022</span></li>
       </ul>
     </div>
   </div>
@@ -554,7 +560,7 @@ p,li,dd{text-wrap:pretty}
         <li><span><span class="ko">대학생 대상 SNS · 유튜브 콘텐츠 제작</span><span class="en">Social and YouTube content for students</span></span></li>
         <li><span><span class="ko">플로깅 CSR 행사 기획</span><span class="en">Planned a plogging CSR event</span></span></li>
       </ul>
-      <div class="kpi"><b>23K</b><small>Shorts</small></div>
+      <div class="kpi"><b>30K</b><small>Shorts</small></div>
     </div>
     <div class="xrow rv">
       <div class="when">2021.03 – 2022.02</div>
@@ -576,7 +582,7 @@ p,li,dd{text-wrap:pretty}
     <div class="xrow rv">
       <div class="when">2021.06 – 2021.08</div>
       <div><h3><span class="ko">비손콘텐츠</span><span class="en">Bison Contents</span></h3><div class="role"><span class="ko">콘텐츠 마케팅 인턴</span><span class="en">Content marketing intern</span></div></div>
-      <ul><li><span><span class="ko">음악 플레이리스트 유튜브 채널 운영, 리브랜딩</span><span class="en">Ran and rebranded a music playlist YouTube channel</span></span></li></ul>
+      <ul><li><span><span class="ko">음악 플레이리스트 유튜브 채널 운영, 리브랜딩</span><span class="en">Ran and rebranded a music playlist YouTube channel</span></span></li><li><span><a class="vlink" style="margin:0" href="https://youtu.be/eVxsSJAyFWo" target="_blank" rel="noopener"><span class="ko">제작한 영상 보기</span><span class="en">Watch a video I made</span> ↗</a></span></li></ul>
       <div class="kpi"></div>
     </div>
   </div>
@@ -599,34 +605,20 @@ p,li,dd{text-wrap:pretty}
 </main>
 
 <script>
-/* 영상 링크: 주소를 넣으면 "영상 보기" 링크가 나타납니다 */
-var LINKS = {
-  short: "",  // 갤럭시 워치5 쇼츠 YouTube 주소
-  long:  ""   // 버즈2 영상 YouTube 주소
-};
 (function(){
-  var root=document.documentElement;
-    im.addEventListener('error',function(){im.remove();});
-    im.src=src; f.insertBefore(im,f.firstChild);
-  });
-  document.querySelectorAll('[data-link]').forEach(function(a){
-    var u=LINKS[a.dataset.link]; if(u){a.href=u;a.hidden=false;}
-  });
-  var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  var io=new IntersectionObserver(function(es){es.forEach(function(e){
-    if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}});},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
-  document.querySelectorAll('.rv').forEach(function(el){io.observe(el);});
-  function count(el){var to=+el.dataset.to,t0=null,d=1400;
-    if(reduce){el.textContent=to;return;}
+  if(!('IntersectionObserver' in window)) return;
+  var reduce=window.matchMedia&&window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function count(el){var to=+el.getAttribute('data-to'),t0=null,d=1400;
+    if(reduce) return;
     function step(t){if(!t0)t0=t;var p=Math.min((t-t0)/d,1);el.textContent=Math.round(to*(1-Math.pow(1-p,4)));if(p<1)requestAnimationFrame(step);}
-    el.textContent='0';requestAnimationFrame(step);}
+    requestAnimationFrame(step);}
   var cio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){count(e.target);cio.unobserve(e.target);}});},{threshold:.6});
   document.querySelectorAll('.cnt').forEach(function(el){cio.observe(el);});
   var links=document.querySelectorAll('.index a'),prog=document.getElementById('prog'),ids=['c1','c2','c3','c4','c5'];
   var sio=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){var id=e.target.id;
-    links.forEach(function(a){a.classList.toggle('on',a.dataset.c===id);});
-    prog.style.transform='scaleX('+((ids.indexOf(id)+1)/ids.length)+')';}});},{rootMargin:'-45% 0px -50% 0px'});
-  ids.forEach(function(id){sio.observe(document.getElementById(id));});
+    links.forEach(function(a){a.classList.toggle('on',a.getAttribute('data-c')===id);});
+    if(prog) prog.style.transform='scaleX('+((ids.indexOf(id)+1)/ids.length)+')';}});},{rootMargin:'-45% 0px -50% 0px'});
+  ids.forEach(function(id){var el=document.getElementById(id); if(el) sio.observe(el);});
 })();
 </script>
 
