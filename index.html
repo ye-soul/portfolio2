@@ -277,6 +277,25 @@ a.tile:hover .pl{background:var(--accent);border-color:var(--accent)}
 a.tile:hover .pl::before{border-left-color:var(--paper)}
 a.tile:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 .hero .lead{max-width:none}
+
+.school{margin-block-start:28px;border-block:1px solid var(--line)}
+.school summary{list-style:none;cursor:pointer;display:grid;grid-template-columns:auto 1fr auto;gap:18px;align-items:center;padding-block:20px;font-weight:600;font-size:17px;letter-spacing:-.02em}
+.school summary::-webkit-details-marker{display:none}
+.school summary .cnt-s{font-size:12px;color:var(--accent);margin-inline-start:6px;font-weight:500}
+.school summary .hint{font-size:13px;font-weight:400;color:var(--ink-3)}
+.school .chev{width:30px;height:30px;border-radius:50%;border:1px solid var(--line);position:relative;transition:transform .4s var(--ease),background .3s var(--ease)}
+.school .chev::before,.school .chev::after{content:"";position:absolute;inset-block-start:50%;inset-inline-start:50%;width:10px;height:1.5px;background:var(--ink);transform:translate(-50%,-50%)}
+.school .chev::after{transform:translate(-50%,-50%) rotate(90deg);transition:transform .4s var(--ease)}
+.school[open] .chev::after{transform:translate(-50%,-50%) rotate(0deg)}
+.school summary:hover .chev{background:var(--accent-soft)}
+.school summary:focus-visible{outline:2px solid var(--accent);outline-offset:4px}
+.school .xp.minor{border-block-start:1px solid var(--line)}
+.school .xrow:last-child{border-block-end:0}
+@media (max-width:640px){.school summary{grid-template-columns:1fr auto}.school summary .hint{display:none}}
+.contact h2{max-width:none;white-space:nowrap;font-size:clamp(34px,7vw,112px);text-wrap:nowrap}
+.about{grid-template-columns:1.2fr 1fr}
+@media (min-width:961px){.quote{white-space:nowrap;font-size:clamp(28px,2.9vw,44px)}}
+.shead{grid-template-columns:1fr;gap:14px}
 </style>
 </head>
 <body>
@@ -554,7 +573,11 @@ a.tile:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       </ul>
       <div class="kpi"></div>
     </div>
-    <div class="xrow rv">
+  </div>
+  <details class="school" open>
+    <summary><span><span class="ko">대학 재학 중 활동</span><span class="en">While in university</span> <span class="mono cnt-s">4</span></span><span class="hint"><span class="ko">서포터즈 · 프로그램 · 현장실습</span><span class="en">Programs, supporters, internships</span></span><span class="chev" aria-hidden="true"></span></summary>
+    <div class="xp minor">
+    <div class="xrow">
       <div class="when">2022.01 – 2023.01</div>
       <div><h3><span class="ko">삼성전자</span><span class="en">Samsung Electronics</span></h3><div class="role"><span class="ko">갤럭시 대학생 서포터즈</span><span class="en">Galaxy Student Supporters</span></div></div>
       <ul>
@@ -563,7 +586,13 @@ a.tile:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       </ul>
       <div class="kpi"><b>30K</b><small>Shorts</small></div>
     </div>
-    <div class="xrow rv">
+    <div class="xrow">
+      <div class="when">2022.01 – 2022.02</div>
+      <div><h3><span class="ko">신한투자증권</span><span class="en">Shinhan Securities</span></h3><div class="role"><span class="ko">기업금융 현장실습</span><span class="en">Corporate finance intern</span></div></div>
+      <ul><li><span><span class="ko">거래 장부 기록, 페이퍼리스 전환 지원</span><span class="en">Transaction records, paperless transition</span></span></li></ul>
+      <div class="kpi"></div>
+    </div>
+    <div class="xrow">
       <div class="when">2021.03 – 2022.02</div>
       <div><h3><span class="ko">한국무역협회 GTEP</span><span class="en">KITA GTEP</span></h3><div class="role"><span class="ko">15기</span><span class="en">Cohort 15</span> · Shopee Singapore</div></div>
       <ul>
@@ -572,21 +601,14 @@ a.tile:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
       </ul>
       <div class="kpi"></div>
     </div>
-  </div>
-  <div class="xp minor" style="border-block-start:0">
-    <div class="xrow rv">
-      <div class="when">2022.01 – 2022.02</div>
-      <div><h3><span class="ko">신한투자증권</span><span class="en">Shinhan Securities</span></h3><div class="role"><span class="ko">기업금융 현장실습</span><span class="en">Corporate finance intern</span></div></div>
-      <ul><li><span><span class="ko">거래 장부 기록, 페이퍼리스 전환 지원</span><span class="en">Transaction records, paperless transition</span></span></li></ul>
-      <div class="kpi"></div>
-    </div>
-    <div class="xrow rv">
+    <div class="xrow">
       <div class="when">2021.06 – 2021.08</div>
       <div><h3><span class="ko">비손콘텐츠</span><span class="en">Bison Contents</span></h3><div class="role"><span class="ko">콘텐츠 마케팅 인턴</span><span class="en">Content marketing intern</span></div></div>
       <ul><li><span><span class="ko">음악 플레이리스트 유튜브 채널 운영, 리브랜딩</span><span class="en">Ran and rebranded a music playlist YouTube channel</span></span></li><li><span><a class="vlink" style="margin:0" href="https://youtu.be/eVxsSJAyFWo" target="_blank" rel="noopener"><span class="ko">제작한 영상 보기</span><span class="en">Watch a video I made</span> ↗</a></span></li></ul>
       <div class="kpi"></div>
     </div>
-  </div>
+    </div>
+  </details>
 </div>
 </section>
 
